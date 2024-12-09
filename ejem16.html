@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Serie de Factoriales</title>
+</head>
+<body>
+    <script>
+        let n, factorial = 1;
+        n = parseInt(prompt("Ingrese el número de términos para la serie de factoriales (máximo 5):"));
+        if (n > 5) {
+            document.write("Error: El número ingresado es mayor que 5. Intente de nuevo con un número menor o igual a 5.");
+        } else if (n > 0) {
+            document.write("Serie de Factoriales:<br>");
+            document.write(factorial, "<br>");
+            for (let i = 1; i <= n; i++) {
+                factorial *= i; 
+                document.write(factorial, "<br>"); 
+            }
+        } else {
+            document.write("Por favor, ingrese un número mayor a 0.");
+        }
+    </script>
+</body>
+</html>
